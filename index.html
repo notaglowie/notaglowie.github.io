@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Falka's sick portfolio :D</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <main>
+        <section id="about">
+        <img src="assets/profile.jpg" alt="Profile Picture" class="profile">
+        <h2>Falka Warren</h2>
+        <p>Hello there! I'm Falka, a 17 year old student developer from Southern Europe, I enjoy breaking and (re)building stuff from scratch purely to figure out how the world around me works.<br><br>I have experience working on Telegram and Discord bots, offensive security, Windows & Linux implant development, OSINT, embedded systems and robotics.<br><br>I also self-host most of my personal projects and services that I use daily (which explains the rather empty GitHub) and as such I have experience being a sysadmin and working with Docker</p>
+        </section>
+
+        <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Property Management Bot</h3>
+            <p>Developed a Telegram bot + web dashboard for a property management company to simplify communication between agents and manage rental properties more efficiently.</p>
+        </div>
+        <div class="project">
+            <h3>Finger UAV</h3>
+            <p>Currently working on an unmanned aerial vehicle as part of a school initiative to help young people in the country learn about robotics and embedded/real time systems.</p>
+        </div>
+        <div class="project">
+            <h3>Artemis</h3>
+            <p>Personal project designed to aggregate data from various sources and streamline the OSINT process by extrapolating data from public forums and analyzing it with AI.</p>
+        </div>
+        <div class="project">
+            <h3>Hype</h3>
+            <p>Music Discord bot focused on reliabilty and customization that reached a peak of 97 servers.</p>
+        </div>
+        <div class="project">
+            <h3>EnVM</h3>
+            <p>Bytecode VM designed to work on robotics projects to allow operators to efficiently swap out modules without reprogramming the MCU of their projects.</p>
+        </div>
+        </section>
+
+        <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:falka@vextech.uk">falka@vextech.uk</a></p>
+        <p>GitHub: <a href="https://github.com/notaglowie" target="_blank">@notaglowie</a></p>
+        <p>Discord: @imnotaglowie</p>
+        <p>RetroShare:<br><code id="retroKey" onclick="copyRetroKey()">
+            BBWnFhR5cqxfJWmi2pKhKTAAxRWv7eorLi33vwobt5horpMBpkh7AEFRmFsa2GQRAAAAAImlmZxcG16b3F
+            4ZHNmYnZua2V6czJuaGY1dW15Mmt6eGs1ZzdwaXg0Njd3Z2NncHhrZXJidDRid2FkLm9uaW9uBAMu2mU=
+        </code><br>Click to copy!   
+        </section>
+    </main>
+        
+    <script>
+    function copyRetroKey() {
+        const key = document.getElementById('retroKey').innerText;
+        navigator.clipboard.writeText(key).then(() => alert('RetroShare key copied!'));
+    }
+    </script>
+
+    <footer>
+        <p>© 2025 Falka Warren</p>
+    </footer>
+    </body>
+</html>
